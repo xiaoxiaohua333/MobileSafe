@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip">
+    
+  
+    <ImageView 
+        android:id="@+id/iv_traffic_icon"
+        android:layout_width="50dip"
+    android:layout_height="50dip"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:src="@drawable/ic_launcher"
+        />
+    
+    <TextView 
+        android:layout_marginLeft="4dip"
+        android:layout_marginTop="8dip"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:text="name"
+        android:id="@+id/tv_traffic_name"
+        android:textColor="@color/gray"
+        android:layout_toRightOf="@id/iv_traffic_icon"
+        />
+    
+     <TextView 
+          android:layout_marginLeft="4dip"
+          android:layout_marginTop="2dip"
+          android:layout_toRightOf="@id/iv_traffic_icon"
+          android:layout_below="@id/tv_traffic_name"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+        android:text="snd"
+        android:textColor="@color/textColor"
+          android:id="@+id/tv_traffic_snd"
+        />
+     
+       <TextView 
+          android:layout_marginLeft="20dip"
+          android:layout_marginTop="2dip"
+          android:layout_toRightOf="@id/tv_traffic_snd"
+          android:layout_below="@id/tv_traffic_name"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+        android:text="rcv"
+        android:textColor="@color/textColor"
+          android:id="@+id/tv_traffic_rcv"
+        />
+
+       <TextView
+           android:id="@+id/tv_traffic_all"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/tv_traffic_name"
+           android:layout_alignBottom="@+id/tv_traffic_name"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="10dip"
+           android:textColor="@color/gray"
+           android:text="all"
+           android:textSize="20sp" />
+    
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

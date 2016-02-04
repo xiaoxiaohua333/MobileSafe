@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<!--    <SlidingDrawer 
+        android:id="@+id/sd_drawer"
+        android:handle="@+id/drawer_handler"
+        android:content="@+id/drawer_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        
+        <ImageView 
+            android:id="@id/drawer_handler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            />
+        
+        <LinearLayout 
+            android:background="#cccccc"
+         android:layout_width="fill_parent"
+        android:layout_height="fill_parent"  
+        android:id="@id/drawer_content"   
+        android:gravity="center"  
+        
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hh"
+                
+                />
+            
+        </LinearLayout>
+        
+        
+    </SlidingDrawer>  -->
+    
+     <TextView
+         android:background="@color/blue"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:text="流量统计" />
+    
+   
+    
+    <FrameLayout 
+         android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+         
+         <LinearLayout 
+        android:visibility="invisible"
+        android:id="@+id/ll_traffic_manager_loading"
+         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        
+        <ProgressBar 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在加载程序信息..."
+            />
+        
+    </LinearLayout>
+        
+    <ListView 
+        android:fastScrollEnabled="true"
+        android:id="@+id/lv_traffic_manager"
+         android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+        >
+        </ListView>
+        
+    </FrameLayout>
+    
+    
+
+</LinearLayout>

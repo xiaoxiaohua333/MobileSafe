@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:background="@color/blue"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:text="进程管理器" />
+    
+    <RelativeLayout 
+          android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView 
+            android:id="@+id/tv_process_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运行中的进程:"
+            
+            />
+        
+         <TextView 
+              android:id="@+id/tv_mem_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余/总内存:"
+            android:layout_alignParentRight="true"
+            />
+        
+    </RelativeLayout>
+    
+    <FrameLayout 
+        android:layout_weight="100"
+         android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+         
+         <LinearLayout 
+        android:visibility="invisible"
+        android:id="@+id/ll_task_manager_loading"
+         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        
+        <ProgressBar 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在加载程序信息..."
+            />
+        
+    </LinearLayout>
+        
+    <ListView 
+        android:fastScrollEnabled="true"
+        android:id="@+id/lv_task_manager"
+         android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+        >
+        </ListView>
+        
+    <TextView 
+        android:id="@+id/tv_task_status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#ffffff"
+        android:background="#ff888888"
+        />
+   
+    </FrameLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button 
+            android:onClick="selectAll"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:text="全选"
+           android:layout_margin="3dip"
+            android:background="@drawable/selector_btn"
+            android:textColor="#ffffff"
+            />
+         <Button 
+             android:onClick="selectInvert"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:text="反选"
+            android:layout_margin="3dip"
+            android:background="@drawable/selector_btn"
+            android:textColor="#ffffff"
+            />
+          <Button 
+              android:onClick="killAll"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:text="清理"
+            android:layout_margin="3dip"
+            android:background="@drawable/selector_btn"
+            android:textColor="#ffffff"
+            />
+           <Button 
+               android:onClick="enterSetting"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:layout_margin="3dip"
+            android:background="@drawable/selector_btn"
+            android:textColor="#ffffff"
+            />
+        
+    </LinearLayout>
+
+</LinearLayout>

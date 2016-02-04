@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/setup3"
+    >
+
+    <TextView
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:text="设置安全号码" />
+    
+   
+     <TextView
+        android:text="sim卡变更后\n报警短信回发给安全号码"
+        style="@style/text_content_style"
+       
+         />
+     
+     <EditText
+         android:layout_width="match_parent"
+         android:layout_height="40dip"
+         android:layout_margin="3dip"
+         android:inputType="phone"
+         android:hint="请输入电话号码"
+         android:id="@+id/et_setup3_phone"
+         android:background="@drawable/shape_edit_setup"
+          android:drawableLeft="@android:drawable/ic_menu_call"
+         /> 
+     
+     <Button 
+         android:layout_margin="3dip"
+         android:onClick="selectContact"
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:text="选择联系人"
+         android:textColor="@color/blue"
+         android:background="@drawable/selector_btn_setup"
+         />
+    
+    
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        >
+        
+        <Button 
+           style="@style/button_next_style"
+            android:layout_margin="5dip"
+            />
+        <Button 
+           style="@style/button_pre_style"
+            android:layout_margin="5dip"
+            />
+        
+    </RelativeLayout>
+  
+
+</LinearLayout>

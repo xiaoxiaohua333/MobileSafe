@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/blue"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name" 
+        android:textSize="22sp"
+        android:textColor="#ffffff"/>
+
+    <ImageView 
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_icon"
+        />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:hint="请输入密码"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="@drawable/shape_edit_setup" 
+        android:drawableLeft="@drawable/lock"
+        android:layout_margin="5dip">
+    </EditText>
+
+    <Button
+        android:onClick="click"
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_margin="5dip"
+        android:text="确认" 
+        android:textColor="@color/blue"
+        android:background="@drawable/selector_btn_setup"/>
+
+</LinearLayout>

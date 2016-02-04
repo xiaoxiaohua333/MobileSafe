@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+
+    <TextView
+        android:background="@color/blue"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:text="高级工具" />
+    
+   <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  号码归属地查询"
+         android:layout_margin="10dip"
+        android:textSize="20sp"
+        android:textColor="@color/gray"
+        android:drawableLeft="@drawable/location"
+        android:gravity="center_vertical"
+        android:onClick="numberQuery"
+        android:clickable="true"
+        android:background="@drawable/selector_text"
+        />
+   
+   
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  短信备份" 
+       android:layout_margin="10dip"
+        android:textSize="20sp"
+        android:textColor="@color/gray"
+        android:drawableLeft="@drawable/backups"
+        android:gravity="center_vertical"
+        android:onClick="smsBackup"
+        android:clickable="true"
+          android:background="@drawable/selector_text"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  短信还原" 
+        android:layout_margin="10dip"
+        android:textSize="20sp"
+        android:textColor="@color/gray"
+        android:drawableLeft="@drawable/restore"
+        android:gravity="center_vertical"
+        android:onClick="smsRestore"
+        android:clickable="true"
+          android:background="@drawable/selector_text"/>
+
+</LinearLayout>

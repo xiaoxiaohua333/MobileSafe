@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:huahua="http://schemas.android.com/apk/res/com.hj.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/setup4"
+    >
+
+    <TextView
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:text="恭喜你,设置完成" />
+    
+   
+   <CheckBox 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="您没有开启防盗保护"
+       android:textColor="#ffffff"
+       android:id="@+id/cb_protecting"
+       android:textSize="22sp"
+       android:layout_margin="5dip"
+       />
+    
+    
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        >
+        
+        <Button 
+           style="@style/button_next_style"
+           android:layout_width="fill_parent"
+           android:background="@drawable/selector_btn_setup"
+           android:text="设置完成"
+           android:textColor="@color/blue"
+           android:layout_margin="10dip"
+            />
+        
+    </RelativeLayout>
+  
+
+</LinearLayout>

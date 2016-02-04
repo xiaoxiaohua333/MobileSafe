@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+   
+        
+          <TextView 
+        android:background="@color/blue"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:text="请输入黑名单号码"
+        android:layout_width="350dip"
+    	android:layout_height="50dip"
+        />
+        
+    
+          <EditText
+              android:id="@+id/et_blacknumber"
+             android:layout_width="300dp"
+              android:layout_height="40dip"
+              android:layout_marginTop="5dip"
+              android:hint="请确认黑名单号码"
+              android:inputType="phone"
+               android:maxLength="11"
+               android:background="@drawable/shape_edit"
+               android:drawableLeft="@android:drawable/ic_menu_call"
+              />
+          
+            <LinearLayout 
+              android:gravity="center_horizontal"
+              android:layout_width="280dp"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              >
+              
+              <CheckBox 
+                  android:id="@+id/cb_phone"
+                  android:text="电话拦截"
+                  android:layout_width="140dp"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/gray"
+                  />
+               <CheckBox 
+                   android:id="@+id/cb_sms"
+                  android:text="短信拦截"
+                  android:layout_width="140dp"
+                  android:textColor="@color/gray"
+                  android:layout_height="wrap_content"
+                  />
+          </LinearLayout>
+          <LinearLayout 
+              android:gravity="center_horizontal"
+              android:layout_width="300dip"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              >
+              
+              <Button 
+                  android:id="@+id/ok"
+                  android:text="确定"
+                 android:textColor="#ffffff"
+                  android:layout_width="140dp"
+                  android:layout_height="40dip"
+                  android:background="@drawable/selector_btn"
+                  android:layout_margin="5dip"
+                  />
+               <Button 
+                   android:id="@+id/cancel"
+                  android:text="取消"
+                  android:textColor="#ffffff"
+                  android:layout_width="140dp"
+                  android:layout_height="40dip"
+                  android:background="@drawable/selector_btn"
+                  android:layout_margin="5dip"
+                  />
+          </LinearLayout>
+          
+          
+
+
+</LinearLayout>

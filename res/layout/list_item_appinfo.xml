@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip">
+    
+  
+    <ImageView 
+        android:id="@+id/iv_app_icon"
+        android:layout_width="50dip"
+    android:layout_height="50dip"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:src="@drawable/ic_launcher"
+        />
+    
+    <TextView 
+        android:layout_marginLeft="4dip"
+        android:layout_marginTop="8dip"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:text="name"
+        android:textColor="@color/gray"
+        android:id="@+id/tv_app_name"
+        android:layout_toRightOf="@id/iv_app_icon"
+        />
+    
+     <TextView 
+          android:layout_marginLeft="4dip"
+          android:layout_marginTop="2dip"
+          android:layout_toRightOf="@id/iv_app_icon"
+          android:layout_below="@id/tv_app_name"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+        android:text="address"
+        android:textColor="@color/textColor"
+          android:id="@+id/tv_app_location"
+        />
+     
+     <ImageView 
+         android:id="@+id/iv_lock_status"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+          android:layout_height="25dip"
+        android:layout_width="25dip"
+        android:src="@drawable/no_lock"
+        android:layout_marginRight="10dip"
+         />
+    
+    
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

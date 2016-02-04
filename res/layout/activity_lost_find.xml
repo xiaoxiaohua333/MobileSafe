@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+      android:background="@color/blue"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:text="手机防盗" />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="安全号码"
+            android:textColor="@color/gray"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_safenumber"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="***"
+            android:textColor="@color/gray"
+            android:textSize="20sp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            />
+    </RelativeLayout>
+    
+    <View 
+        android:layout_marginTop="10dp"
+         android:layout_height="0.2dp"
+            android:layout_width="fill_parent"
+            android:background="#88000000"
+        />
+    
+     <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="防盗保护是否开启"
+            android:textColor="@color/gray"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            />
+        
+        <ImageView 
+            android:id="@+id/iv_protecting"
+            android:src="@drawable/no_lock"
+            android:layout_alignParentRight="true"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            />
+    </RelativeLayout>
+    
+    <View 
+        android:layout_marginTop="10dp"
+         android:layout_height="0.2dp"
+            android:layout_width="fill_parent"
+            android:background="#88000000"
+        />
+    
+       <Button 
+           android:background="@drawable/selector_btn"
+           android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:text="重新进入设置向导"
+            android:onClick="reEnterSetup"
+            android:layout_margin="5dip"
+           />
+   
+         <View 
+        android:layout_marginTop="8dp"
+         android:layout_height="0.2dp"
+            android:layout_width="fill_parent"
+            android:background="#88000000"
+        />
+         
+          <TextView 
+              android:background="@color/gray"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="功能简介"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            />
+           <TextView
+               android:layout_margin="10dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="  使用安全号码发送短信(#*location*#)\n  获取手机当前位置"
+        android:textColor="@color/gray"
+        android:drawableLeft="@drawable/location"
+         />
+    <TextView
+         android:layout_margin="10dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  使用安全号码发送短信(#*alarm*#)\n  使手机报警"
+         android:textSize="18sp"
+        android:textColor="@color/gray"
+        android:drawableLeft="@drawable/alarm"
+         />
+    
+</LinearLayout>

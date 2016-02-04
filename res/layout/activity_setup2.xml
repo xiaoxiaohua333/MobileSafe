@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:huahua="http://schemas.android.com/apk/res/com.hj.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/setup2"
+    >
+
+    <TextView
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:text="手机卡绑定" />
+    
+    <TextView
+        android:text="通过绑定SIM卡:"
+        style="@style/text_content_style"
+      
+         />
+     <TextView
+        android:text="下次重启手机如果发现SIM卡变化\n就会发送警报短信"
+        style="@style/text_content_style"
+       
+         />
+      <com.hj.mobilesafe.ui.SettingItemView
+          
+          android:id="@+id/siv_setup2_sim"
+        huahua:settitle="点击绑定sim卡"
+        huahua:desc_on="sim卡已绑定"
+        huahua:desc_off="sim卡没有绑定"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        
+        
+    </com.hj.mobilesafe.ui.SettingItemView>
+     
+       
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        
+        >
+        
+        <Button 
+           style="@style/button_next_style"
+           android:layout_margin="5dip"
+            />
+        <Button 
+           style="@style/button_pre_style"
+            android:layout_margin="5dip"
+            />
+        
+    </RelativeLayout>
+  
+
+</LinearLayout>
